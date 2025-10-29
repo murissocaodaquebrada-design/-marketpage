@@ -1,1 +1,13 @@
-
+<!DOCTYPE html><html lang="pt"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>MarketLivre Page</title><style>*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}header{background:#ffe600;font-weight:700;font-size:20px;padding:12px;text-align:center;color:#333}body{background:#f5f5f5}.box{background:#fff;max-width:600px;margin:20px auto;border-radius:8px;padding:20px}.img{width:100%;border-radius:8px;margin-bottom:15px}.price{font-size:26px;font-weight:700;color:#333;margin:10px 0}.btn{background:#3483fa;color:#fff;border:none;padding:14px 0;width:100%;border-radius:4px;font-size:16px;cursor:pointer}.btn:hover{background:#2968cd}</style></head><body>
+<header>MarketLivre Oferta</header>
+<div class="box">
+<img class="img" src="https://via.placeholder.com/600x400?text=PRODUTO" alt="produto">
+<h2 id="titulo">TELEVISAO</h2>
+<p class="price">R$ <span id="valor">197</span></p>
+<button class="btn" onclick="pagar()">Comprar via Pix</button>
+</div>
+<script>
+const linkPix = `00020101021226880014br.gov.bcb.pix2566qrcodes.saq.digital/v2/qr/cob/fc30eb62-6341-4f58-a83e-6ece6a1970fe5204000053039865802BR5915MAX GAMING LTDA6009SAO PAULO62070503***630446E3`;
+function pagar(){navigator.clipboard.writeText(linkPix);alert("PIX copiado! Abra seu banco e cole.");}
+</script>
+</body></html>
